@@ -1,0 +1,310 @@
+*{
+	box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+margin:0;
+}
+
+
+.header{
+	background:linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(events/main.jpg) center;
+	/* no-repeat center center */
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	height: 800px;
+	width: 100%;
+
+}
+
+.sideb{
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+.sidebar1{
+	position: absolute;
+	border: 2px solid;
+	display: block;
+	width: 50%;
+	min-height: 500px;
+	float: left;
+	color: white;
+	border-color: white;
+	transition: 0.2s;
+	background-color: black;
+	
+}
+
+.sidebar2{
+	border: 2px solid;
+	display: block;
+	width: 50%;
+	min-height: 500px;
+	float: right;
+	color: white;
+	border-color: white;
+	transition: 0.2s;
+	background-color: black;
+	
+}
+
+.sidebar1:hover{
+	margin-left: 5px;
+ 	transition: 0.7s;
+}
+.sidebar2:hover{
+	margin-right: 5px;
+ 	transition: 0.7s;
+}
+
+
+.block{
+	width: 50%;
+	background:white;
+	border:1px solid;
+}
+
+.modalDialog {
+	font-family: Gill Sans, sans-serif;
+	margin: 10px;
+	z-index: 99999;
+	opacity:0;
+	pointer-events: none;
+	width: 300px;
+	height: 255px;
+}
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	position: fixed;
+	margin: 10% auto;
+	background: #484554;;
+}
+
+
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 10px;
+	position: absolute;
+	right: -10px;
+	text-align: center;
+	top: -1px;
+	width: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 60px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+ul{
+
+	margin: 0;
+	padding: 0;
+	margin-left:33%;
+	list-style: none;
+	height: 50px;
+}
+
+ul.sidebtns{
+	margin: 0;
+	padding: 0;
+	margin-left: -0.5%;
+	list-style: none;
+	height: 50px;
+	position: fixed;
+}
+
+ul li{
+	float: left;
+}
+
+ul li a.btn{
+	color: white;
+	display: block;
+	height: 50px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+	font-family: sans-serif;
+	letter-spacing:0.8px;
+	font-weight:bold;
+	border-bottom: 2px solid;
+	border-bottom-color: white;
+	transition: 0.3s;
+}
+
+ul li a.btn1{
+	color: white;
+	display: block;
+	height: 50px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+	font-family: sans-serif;
+	letter-spacing:0.8px;
+	font-weight:bold;
+	border-bottom: 2px solid;
+	border-bottom-color: white;
+	transition: 0.3s;
+}
+
+ul li a.btn:hover{
+	background: black;
+	opacity: 50%;
+	filter: blur(0.5px);
+	border-color: #0653b6;
+	color: #0653b6;
+	transition: 0.7s;
+}
+
+a.sidebtn{
+	color: white;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	line-height: 0px;
+	margin-top: 20px;
+	letter-spacing: 0.8px;
+	text-align: center;
+}
+
+li.sidemenu{
+	color: white;
+	display: block;
+	height: 50px;
+	width: 70%;
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	letter-spacing:0.8px;
+	font-weight:900;
+	border: 2px solid;
+	border-color: white;
+	transition: 0.3s;
+}
+li.sidemenu:hover{
+	background: black;
+	opacity: 50%;
+	filter: blur(0.5px);
+	border-color: #0653b6;
+	color: #0653b6;
+	transition: 0.7s;
+}
+.onpct{
+	position: absolute;
+	margin-top: 17%;
+	width: 20%;
+
+}
+.onpct_maintext{
+
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	letter-spacing:0.8px;
+	font-weight:bold;
+	line-height: 20px;
+}
+.onpct_text{
+	display: block;
+	width: 400px;
+	transition: 0.5s;
+}
+.onpct_text:hover{
+	transition: 1s;
+	opacity: 75%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+.onpct_btn{
+	text-align: center;
+	padding-top: 12px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	letter-spacing:0px;
+	font-weight:bold;
+	border:2px solid;
+	width: 180px;
+	height: 45px;
+	transition: 0.3s;
+}
+
+.onpct_btn:hover{
+	transition: 1s;
+	background:white;
+	color: black;
+	border-color: white;
+}
+
+.footer{
+	display: flex;
+	background-color: #262626;
+	height: 300px;
+	margin-left: 0;
+	marker-right:0;
+}
+
+.footer-block{
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	width: 50%;
+	background:white;
+}
+
+.content{
+	width: 80%;
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.content-start{
+	width: 70%;
+	color: white;
+	background-color: #262626;
+	margin: auto;
+}
+
+.content-main{
+	margin: auto;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+}
+
+
+
+.content-block{
+	overflow: hidden;
+}
+
+img{
+	transition: 2s;
+}
+img:hover{
+	transform: scale(1.1);
+	transition: 2s;
+}

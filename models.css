@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+margin:0;
+} 
+
+.header{
+	width: 100%;
+	height: 90px;
+	margin: auto;
+	display: flex;
+}
+
+
+.header-buttons{
+	display: flex;
+	margin: auto;
+	text-align: center;
+	height: 100%;
+	width: 65%;
+	border-bottom: 1px solid;
+	border-color: lightgray;
+	font-family: sans-serif;
+}
+
+.button{
+	display: block;
+	height: 100%;
+	width: 10%;
+
+}
+
+.button h3{
+	margin-top: 25%;
+	color: #454547;
+	transition: 1s;
+}
+
+
+.button:hover{
+	border-bottom: 4px solid;
+	border-color: #0653b6;
+}
+
+.content{
+	font-family: sans-serif;
+	width: 65%;
+	margin-top:75px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contbut{
+	width: 6.5%;
+	text-align: center;
+}
+
+.contbut:hover{
+	border-bottom: 4px solid;
+	border-color:#0653b6;
+}
+.contbut:hover a{
+	color: #454547;
+}
+
+
+.automobil{
+	font-family: sans-serif;
+	width: 65%;
+	margin-top:75px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carses{
+	display: flex;
+}
+
+.carses img{
+	transition: 1s;
+}
+
+.carses img:hover{
+	transform: scale(1.1);
+	transition: 1s;
+}
+
+.footer{
+	display: flex;
+	background-color: #262626;
+	height: 300px;
+	margin-left: 0;
+	marker-right:0;
+}
+
+.footer-block{
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	width: 50%;
+	background:white;
+}
+
+.block{
+	width: 50%;
+	background:white;
+	border:1px solid;
+}
+
+
